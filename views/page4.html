@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css_script.css">
+    <script defer src="../static/js_script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="./logo_bikestop.jpeg" alt="logo">
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="page2.html">Log in</a></li>
+            <li><a href="page3.html">Register</a></li>
+            <li><a href="page4.html">Search</a></li>
+            <li><a href="page6.html">About</a></li>
+        </ul>
+        <button type="button" >Subscribe</button>
+    </nav>
+    <div class="search">
+        <h1>Search Bike Stores</h1>
+        <form>
+            <div class="form">       
+            <h2>Type of bikes:</h2> 
+              
+            <input type="checkbox" name="bike_type" value="City"> City     
+            <input type="checkbox" name="bike_type" value="Road"> Road     
+            <input type="checkbox" name="bike_type" value="Mountain"> Mountain     
+            <input type="checkbox" name="bike_type" value="Kids"> Kids     
+            <input type="checkbox" name="bike_type" value="Electric"> Electric<br>            
+            <br>
+            
+            <label for="distance">Distance up to</label>
+            <select name="distance" id="distance">
+                <option value="1-km">1-km</option>
+                <option value="3-km">3-km</option>
+                <option value="5-km">5-km</option>
+                <option value="10-km">10-km</option>
+                <option value="15-km">15-km</option>
+                <option value="20-km">20-km</option>
+            </select><br><br>
+
+            <label for="date"> Day</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <br>
+            <label for="time"> from </label>
+            <input type="time" id="time" name="time">
+            &nbsp
+            <label for="time"> untill </label>
+            <input type="time" id="time" name="time">
+            <br><br>
+            
+            <br><br>
+            <!-- <button type="submit">Find your store</button> -->
+            <a href="page5.html"> <button type="button"  >Find bike stores</button></a>
+        </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

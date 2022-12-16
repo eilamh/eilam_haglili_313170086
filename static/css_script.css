@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0.1;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    display: inline ;
+    padding: 10px 40px;
+
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+button{
+    border: none;
+    background: #ea1538;
+    padding: 12px 30px;
+    margin-right: 20px;
+    border-radius: 30px ;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4 sec;
+}
+
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(73, 70, 70);
+    padding: 12px 30px;
+    border-radius: 30px ;
+}
+
+body{
+    background-color:rgba(218, 209, 201, 0.728);
+}
+
+
+
+nav{
+    background: black;
+    padding: 20px 40px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+width: 300px;
+margin-right: 10px;
+}
+
+
+
+
+ /* ////======================================================================/// */
+
+
+
+ 
+#form {
+    width: 350px;
+    margin: 15vh auto 0 auto;
+    padding: 20px;
+    background-color:rgba(227, 221, 216, 0.728);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#form h1 {
+    font-size: 40px;
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: #ea1538;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+ 
+
+/* ===================welcome effect========= */
+
+span{
+    opacity: 0;
+    transition: all 0.9s ease;
+    
+}
+
+span.fade{
+    opacity: 1;
+    color: black;
+}
+
+
+ .welcome_page{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: black;
+}
+
+.welcome_page p{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.welcome1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: #ea1538;
+} 
+
+/* =========about page============== */
+
+.about{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: black;
+    animation-name: example;
+    animation-duration: 1.5s;
+}
+
+@keyframes example {
+    from {color: rgba(218, 209, 201, 0.728)}
+    to {color: black;}
+  }
+
+.about h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.about p{
+    font-size: 20px ;
+    font-weight: bold;
+}
+
+  
+  
+ /* =================search page====================== */
+
+ .search{
+    width:500px;
+    margin: 10vh auto 0 auto;
+    padding: 20px;
+    text-align:center;
+    color: black;
+    background-color: #cfbdb9;
+    border-radius: 70px;
+    width: 600px;
+    
+}
+
+.search h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+ /* =================results page====================== */
+
+ .styled-table {
+    border-collapse: collapse;
+    margin: 10vh auto 0 auto;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(79, 16, 16, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #a61d1d;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #dd3232;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #cb4646;
+}
+
+.back_to_search{
+    margin: 10vh auto 0 auto;
+    text-align:center; 
+}
+
+  
